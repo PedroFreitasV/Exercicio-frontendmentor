@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <style>
+    body{
+      background-color: rgb(248, 233, 216);
+    }
+    h5{
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: hsl(228, 12%, 48%);
+    }
+    h1{
+      font-family: 'Fraunces', serif;
+      font-weight: 700 !important;
+    }
+    .produto{
+      background-color: white;
+    }
+    p{
+      font-family: 'Montserrat', sans-serif;
+      color: #000 !important;
+      font-weight: bold !important;
+      line-height: 23px;
+    }
+    .price{
+      color: hsl(134, 24%, 32%);
+      font-family: 'Fraunces', serif !important;
+    }
+    h6{
+
+    }
+
+/*********************** MEDIA QUERIE *****************************/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  *{
+    margin: 0;
+  }
+  body{
+    padding: 10px;
+  }
+  .img-perfume{
+    height: 250px;
+    background-image: url(./images/image-product-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .produto{
+    height: 350px;
+    margin-top: 0;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-right: 35px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  h5{
+    padding-bottom: 10px;
+  }
+  button{
+    background: hsl(135, 26%, 40%);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    outline: none;
+    border: 3px solid hsl(135, 26%, 40%);
+    color: white;
+    border-radius: 10px;
+  }
+  span{
+    font-size: 0.5em !important;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+  }
+  p{
+    padding-bottom: 10px;
+  }
+  h1{
+    padding-bottom: 10px;
+  }
+  h1.price{
+    padding-bottom: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body{
+    padding-left: 30%;
+    padding-top: 5%;
+    align-items: center;
+    display: flex;
+  }
+  .img-perfume{
+    float: left;
+    background-image: url(./images/image-product-desktop.jpg);
+    height: 470px;
+    width: 250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .produto{
+    float: left;
+    width: 200px;
+    padding: 0px;
+    height: 470px;
+    padding-left: 25px;
+    padding-right: 15px;
+    border-radius: 0px 10px 10px 0px;
+  }
+  button{
+    background: hsl(135, 26%, 40%);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    outline: none;
+    border: 3px solid hsl(135, 26%, 40%);
+    color: white;
+    border-radius: 10px;
+  }
+  span{
+    font-size: 0.5em !important;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+  }
+}
+  </style>
+</head>
+<body>
+    <div class="conteudos">
+        <div class="img-perfume">
+        </div>
+        <div class="produto">
+            <h5>Perfume</h5>
+            <h1>Gabrielle Essence Eau De Parfum</h1>
+            <p>A floral, solar and voluptuous interpretation composed by Oliver Polge, Perfumer-Creator
+              for the House of CHANEL
+            </p>
+            <h1 class="price">$149.99 <sup><span>$169.99</span></sup></h1>
+            <button><i class="fa-solid fa-cart-shopping"></i>  Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
